@@ -3,15 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local Event Finder - Home</title>
-    
-    <!-- Google Fonts -->
+    <title>All Events - Local Event Finder</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    
-    <!-- External Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -23,8 +19,8 @@
             </a>
             <nav class="main-nav" id="main-nav">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="events.html">Events</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html" class="active">Events</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -38,29 +34,23 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="page-header">
             <div class="container">
-                <h1>Discover What's Happening</h1>
-                <p>Find live music, workshops, art shows, and other great events in your community.</p>
-                <div class="search-bar">
-                    <input type="text" placeholder="Search for events, artists, or venues...">
-                    <input type="text" placeholder="Location...">
-                    <input type="date" placeholder="Date..." title="Select event date">
-                    <button class="btn btn-accent">Search</button>
-                </div>
+                <h1>All Upcoming Events</h1>
+                <p>Browse our full calendar of concerts, workshops, and community gatherings.</p>
             </div>
         </section>
 
         <section class="events-section">
             <div class="container">
-                <h2 class="section-title">Upcoming Events</h2>
+                <!-- Future location for filter controls -->
                 <ul class="event-grid" id="event-grid">
                     <!-- Event cards will be dynamically inserted here by JavaScript -->
                 </ul>
             </div>
         </section>
     </main>
-    
+
     <footer class="main-footer">
         <div class="container">
             <div class="footer-links">
@@ -73,7 +63,7 @@
         </div>
     </footer>
 
-    <!-- Event Detail Modal -->
+    <!-- Re-using the same modal structure -->
     <div id="event-modal" class="modal">
         <div class="modal-content">
             <span class="close-btn" id="close-modal">&times;</span>
@@ -87,7 +77,6 @@
         </div>
     </div>
 
-    <!-- IMPORTANT: The script tag is now type="module" -->
     <script type="module" src="js/main.js"></script>
 </body>
 </html>
